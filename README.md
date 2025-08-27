@@ -30,10 +30,6 @@
 
 08-26-25
 
-- Added second document upload window to UI.
-  
-- Added output window for results and or exceptions.
-
 - Dependencies (parsing Excel): pandas, openpyxl (for .xlsx) and xlrd (for legacy .xls).
 
 - A new loader that converts each sheet into normalized text blocks (or optional Markdown tables) that your existing chunker can handle.
