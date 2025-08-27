@@ -27,7 +27,6 @@
 - [Learn more](#learn-more)
 
 ## What's New
-Added
 
 08-27-25
 
