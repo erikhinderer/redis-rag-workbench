@@ -34,6 +34,18 @@
 
 - A new loader that converts each sheet into normalized text blocks (or optional Markdown tables) that your existing chunker can handle.
 
+New loader: shared_components/loaders/xls_loader.py
+
+This mirrors typical “PDF → text” behavior but for Excel. It:
+
+Reads each sheet with pandas,
+
+Optionally normalizes headers,
+
+Produces row-wise “records” rendered as compact key: value lines,
+
+Yields chunks you can pass to your existing splitter/embedding flow.
+
 - Minor server changes to accept Excel MIME types and to route Excel files through the new loader.
 
 - A new storage folder (mirroring pdf_storage/) for raw Excel uploads, e.g. xls_storage/.
