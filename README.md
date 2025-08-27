@@ -44,8 +44,6 @@
 
 - Tiny UI tweak to allow selecting .xls,.xlsx in the upload control.
 
-(*None of this touches the Redis schema or retrieval code paths; it only changing how “documents become text chunks.”)
-
 08-27-25
 
 - ...
