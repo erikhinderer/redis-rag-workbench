@@ -26,6 +26,21 @@
   - [Apple Silicon (M1+)](#apple-silicon-m1)
 - [Learn more](#learn-more)
 
+## What's New
+Added
+
+08-27-25
+Dependencies (parsing Excel): pandas, openpyxl (for .xlsx) and xlrd (for legacy .xls).
+
+A new loader that converts each sheet into normalized text blocks (or optional Markdown tables) that your existing chunker can handle.
+
+Minor server changes to accept Excel MIME types and to route Excel files through the new loader.
+
+A new storage folder (mirroring pdf_storage/) for raw Excel uploads, e.g. xls_storage/.
+
+Tiny UI tweak to allow selecting .xls,.xlsx in the upload control.
+
+None of this touches the Redis schema or retrieval code paths; it only changing how “documents become text chunks.”
 
 ## Prerequisites
 
