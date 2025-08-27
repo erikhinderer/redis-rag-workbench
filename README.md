@@ -48,7 +48,7 @@
 
 08-27-25
 
-(...in progress)
+- ...
 
 ## Prerequisites
 
