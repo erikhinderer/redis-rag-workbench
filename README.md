@@ -30,6 +30,7 @@
 Added
 
 08-27-25
+
 Dependencies (parsing Excel): pandas, openpyxl (for .xlsx) and xlrd (for legacy .xls).
 
 A new loader that converts each sheet into normalized text blocks (or optional Markdown tables) that your existing chunker can handle.
