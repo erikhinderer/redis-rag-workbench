@@ -36,15 +36,15 @@
 
   - New loader: shared_components/loaders/xls_loader.py
 
-  - This mirrors typical “PDF → text” behavior but for Excel. It:
+  - This mirrors typical “PDF → text” behavior but for Excel it:
 
-  - Reads each sheet with pandas,
+    - Reads each sheet with pandas,
 
-  - Optionally normalizes headers,
+    - Optionally normalizes headers,
 
-  - Produces row-wise “records” rendered as compact key: value lines,
+    - Produces row-wise “records” rendered as compact key: value lines,
 
-  - Yields chunks you can pass to your existing splitter/embedding flow.
+    - Yields chunks you can pass to your existing splitter/embedding flow.
 
 - Minor server changes to accept Excel MIME types and to route Excel files through the new loader.
 
